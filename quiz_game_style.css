@@ -1,0 +1,81 @@
+/*
+    quiz game style.css
+    1st February 2026
+    This is the main style sheet for the quiz game.
+*/
+
+html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 2%;
+    background-color: silver;
+}
+
+#btnPlay {
+    margin: 2%;
+    padding: 2%;
+    font-size: 2em;
+}
+
+.questionItem {
+    background-color: darkseagreen;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+}
+
+.questionButtons, #btnNext {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+#txtQuestion {
+    text-align: center;
+}
+
+#statsContainer {
+    padding: 5%;
+    margin: 2%;
+}
+
+#statusContainer {
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+}
+
+.showNextButton {
+    display: block;
+    background-color: skyblue;
+}
+
+.showNextButton:hover, .questionButtons:hover {
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px black;
+}
+
+.showQuestionButtonContainer {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.showPlayButton, .showQuizGame, .showQuestionStatus {
+    display: block;
+}
+
+.hidePlayButton, .hideQuizGame, .hideNextButton, .hideQuestionButtonContainer, .hideQuestionStatus {
+    display: none;
+}
+
+footer {
+    margin-top: 20%;
+    text-align: center;
+    padding: 10%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <head>
+
+        <title>Quiz Game</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="./quiz_game_style.css" />
+
+    </head>
+    
+    <body>
+
+        <nav>
+
+            <h1>Quiz Game</h1>
+            <p>
+                A round of general knowledge quizzing.
+            </p>
+        
+        </nav>
+
+        <main>
+
+            <!-- This is the play control. -->
+            <section id="playControls">
+
+                <button id="btnPlay">Play Quiz!</button>
+                
+            </section>
+
+            <!-- This is the actual quiz game. -->
+            <section id="quizGame">
+
+                <!-- The lives left. -->
+                <section id="statsContainer">
+
+                    <h2>Total Correct:</h2>
+                    <p id="txtCorrect">0/20</p>
+
+                    <h2>Total Answered:</h2>
+                    <p id="txtAnswered">0/20</p>
+
+                </section>
+
+                <!-- The question. -->
+               <section class="questionItem">
+
+                    <h2 id="txtQuestion">Question</h2>
+
+                    <section id="questionButtonContainer">
+                        <button id="btnOptA" class="questionButtons">a</button>
+                        <button id="btnOptB" class="questionButtons">b</button>
+                        <button id="btnOptC" class="questionButtons">c</button>
+                        <button id="btnOptD" class="questionButtons">d</button>
+                    </section>
+
+                    <section id="statusContainer">
+                        <h2 id="txtStatus">Not answered</h2>
+                        <button id="btnNext">Next</button>
+                    </section>
+
+                </section>   
+            
+            </section>
+
+        </main>
+
+        <footer>
+            <p>2026</p>
+        </footer>
+
+        <script src="./quiz_game_script.js"></script>
+
+
+    </body>
+</html>
